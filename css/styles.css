@@ -1,0 +1,82 @@
+:root{
+    --main-bg-color: white;
+    --user-image-size: 150px;
+    --user-image-border: 3px;
+}
+
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRFYajWdJGDYLkRaLPglUW-EYgKXbLenuO5AkUcbmHihuEf5cFH") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+    align-items: center;
+}
+
+.userCardContainer{
+    flex-basis: 300px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid aqua;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    box-shadow: 0px 0px 39px 13px rgba(0,0,0,0.8);
+}
+
+header{
+    background-image: url("https://cdn.mos.cms.futurecdn.net/c4737f12d6388b0870d7c8a379efdd3a.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+}
+.userImageContainer{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -76px;
+}
+
+.userImageContainer > img{
+    height: var(--user-image-size);
+    width: var(--user-image-size);
+    border-radius: 50%;
+    border: var(--user-image-border) solid var(--main-bg-color);
+}
+
+.userTextContainer{
+    padding: 20px;
+    text-align: center;
+}
+.userTextContainer > h1 {
+    font-size: 32px;
+    font-family: 'Permanent Marker', sans-serif;
+}
+
+.userTextContainer > p {
+    font-family: 'Patrick Hand',sans-serif;
+    padding-top: 20px;
+}
+.userTextContainer >h5 {
+    padding-top: 12px;
+    opacity: 0.5;
+}
+
+.userContact{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.contact + .contact{
+    margin-left: 15px;
+}
+
